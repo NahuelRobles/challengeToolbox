@@ -1,0 +1,16 @@
+{
+  "preset": "react-native",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "collectCoverageFrom": [
+    "source/**/*.{js,jsx,ts,tsx}",
+    "!source/screens/navigation/**",
+    "!source/index.js"
+  ],
+  "testEnvironment": "jsdom",
+  "setupFilesAfterEnv": [
+    "<rootDir>/jest.env.js"
+  ],
+  "globals": {
+    "__TESTING__": true
+  }
+}
